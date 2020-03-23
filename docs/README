@@ -1,5 +1,11 @@
 README
 
+******
+sudo groupadd -f uinput
+sudo gpasswd -a $USER uinput
+*****
+
+
 Notes:
 I've only tried this on Ubuntu 11.04 64 bit version.  No promises that it will work
 on your version even if it's the same.
