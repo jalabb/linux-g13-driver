@@ -1,2 +1,6 @@
-#copier dans /lib/udev/rules.d/
-SUBSYSTEM=="usb", ATTR{idVendor}=="046d", ATTR{idProduct}=="c21c", MODE="0666"
+# copy into /usr/lib/udev/rules.d/
+# create group uinput if necessary: $ sudo groupadd -f uinput
+# add user to group uinput : sudo gpasswd -a $USER uinput
+KERNEL=="uinput", GROUP="uinput", MODE:="0660"
+SUBSYSTEM=="usb", ATTR{idVendor}=="046d", ATTR{idProduct}=="c21c"
+
