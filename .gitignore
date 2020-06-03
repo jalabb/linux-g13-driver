@@ -1,0 +1,7 @@
+source/c/G13.o
+source/c/G13Action.o
+source/c/Macro.o
+source/c/MacroAction.o
+source/c/Main.o
+source/c/Output.o
+source/c/PassThroughAction.o
