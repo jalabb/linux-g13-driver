@@ -28,7 +28,7 @@ void discover() {
 		return;
 	}
 
-	libusb_set_debug(ctx, 3);
+	libusb_set_option(ctx, LIBUSB_OPTION_LOG_LEVEL, LIBUSB_LOG_LEVEL_INFO);
 
 	ssize_t count = libusb_get_device_list(ctx, &devs);
 	if (count < 0) {
